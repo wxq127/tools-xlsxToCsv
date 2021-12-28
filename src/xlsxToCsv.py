@@ -2,10 +2,9 @@ import xlrd
 import csv
 import codecs
 import os
-import sys
 import util
 
-# fromDir = os.path.join(util.getCurRootPath(), 'excel')
+# fromDir = os.path.join(util.getCurRootPath(), '../excel')
 fromDir = util.getCurRootPath()
 toDir = os.path.join(fromDir, '../csv')
 
