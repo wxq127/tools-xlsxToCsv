@@ -2,13 +2,18 @@ import xlrd
 import csv
 import codecs
 import os
+import sys
+import util
 
-# fromDir = os.path.join(os.getcwd(), 'excel')
-fromDir = os.getcwd()
+# fromDir = os.path.join(util.getCurRootPath(), 'excel')
+fromDir = util.getCurRootPath()
 toDir = os.path.join(fromDir, '../csv')
 
 
 def startConvert():
+    print('开始转换')
+    print('fromDir:', fromDir)
+    print('toDir:', toDir)
     if not os.path.exists(toDir):
         os.mkdir(toDir)
     count = 0
